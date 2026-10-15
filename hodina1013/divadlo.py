@@ -1,4 +1,5 @@
 #vstupy
+den=input("Zadejte den představení: ")
 mnozstvi=int(input("Kolik osob?: "))
 student=input("Jste student? [ano/ne]: ")
 vek=int(input("Zadejte váš věk: "))
@@ -7,6 +8,8 @@ vek=int(input("Zadejte váš věk: "))
 cena_zaklad=500
 nazev_slevy= ""
 
+if den=="sobota" or den=="neděle":
+    cena_zaklad=cena_zaklad+50
 if mnozstvi>=4:     #pravidlo které má vyšší prioritu než věk
     cena_celkem=mnozstvi*cena_zaklad*0.75
     nazev_slevy= "Sleva pro skupiny"
@@ -20,7 +23,17 @@ else:               #věková pravila (student nebo senior)
     else:
         cena_celkem=mnozstvi*cena_zaklad
 
+
+
 #Výstupy
 print("Cena celkem je:", cena_celkem, "Kč")
 if nazev_slevy!="":
     print(nazev_slevy)
+
+if mnozstvi==1:
+    print(f"{mnozstvi} osoba")
+elif mnozstvi==2 or mnozstvi==3 or mnozstvi==4:
+    print(f"{mnozstvi} osoby")
+else:
+    print(f"{mnozstvi} osob")
+
