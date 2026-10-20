@@ -26,6 +26,7 @@ else:               #věková pravila (student nebo senior)
 
 
 #Výstupy
+print("-------------Výsledná účtenka-------------")
 print("Cena celkem je:", cena_celkem, "Kč")
 if nazev_slevy!="":
     print(nazev_slevy)
