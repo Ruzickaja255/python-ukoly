@@ -9,13 +9,13 @@ max_val=a
 #porovnani s b
 if b<min_val:
     min_val=b
-if b>max_val:
+elif b>max_val:
     max_val=b
 
 #porovnani s c
 if c<min_val:
     min_val=c
-if c>max_val:
+elif c>max_val:
     max_val=c
 
 print("minimum je:", min_val)
