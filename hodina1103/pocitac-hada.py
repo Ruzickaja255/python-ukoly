@@ -16,10 +16,8 @@ while odpoved != "s":
         dole = tip + 1
     elif odpoved == "m":
         nahore = tip - 1
-    elif odpoved != "s":
-        print("Neplatná odpověď. Zadej 'v', 'm' nebo 's'.")
+    elif odpoved == "s":
+        print(f"Uhádl jsem číslo {tip} na {pokusy} pokusů.")
     else:
-        print("Neplatná odpověď. Zadejte 'v', 'm' nebo 's'.")
+        print("Neplatná odpověď, zkus to znovu.")
         pokusy -= 1
-
-print(f"Uhádl jsem číslo {tip} na {pokusy} pokusů.")

@@ -15,6 +15,6 @@ while tip!=tajne_cislo and pokus < max_pokusy:
 else:
     print("Musíš zadávat číslo mezi 1 a 20.")
 if tip == tajne_cislo:
-    print(f"Uhádl jsi číslo {tajne_cislo} na {pokus} pokusů.")
+    print(f"Gratuluji! Uhodl jsi číslo {tajne_cislo} na {pokus}. pokus.")
 else:
-    print(f"Neuhádl jsi číslo {tajne_cislo}.")
+    print(f"Bohužel ti došly pokusy! Tajné číslo bylo {tajne_cislo}.")
