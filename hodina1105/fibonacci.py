@@ -10,3 +10,5 @@ while mesic <= pocet_mesicu:
     a = b
     b = dopredu
     mesic += 1
+    
+print (f"Na císařském ostrově bude po {pocet_mesicu} měsících celkem {b - a} párů králíků.")
